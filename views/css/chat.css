@@ -318,4 +318,10 @@ input[type="submit"]:hover {
 }
 
 
-  
+/* @media (min-width: 768px) and (max-width: 996px) {
+
+  .chatbot__overview{
+    width: ;
+  }
+
+}  */

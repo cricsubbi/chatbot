@@ -73,6 +73,17 @@ var checkInput = function(input) {
   }
   else if(lang=="Kannada(ಕನ್ನಡ)"){
     lang1="kn"
+  }else if(lang=="Tamil(தமிழ்)"){
+    
+    lang1="tn"
+  }
+  else if(lang=="Telugu(తెలుగు)"){
+    
+    lang1="te"
+  }
+  else if(lang=="Malyalam(മല്യാലം)"){
+    
+    lang1="ml"
   }
   console.log(input)
   
