@@ -11,7 +11,6 @@ const port = process.env.PORT || 3000;
 
 app.get("/",(req,res)=>{
     
-       
     if(req.query.lang=="hin"){
         res.render("bot1.ejs",{lang:"hin"})
     }else if(req.query.lang=="kan"){
