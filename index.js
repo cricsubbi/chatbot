@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require("body-parser") 
 const allInfo = require("./api")
 const app = express()
-const port = process.env.PORT
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set("view engine","ejs");
 app.use(express.static("views"));
