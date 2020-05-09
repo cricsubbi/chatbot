@@ -10,12 +10,14 @@ app.use(express.static("views"));
 const port = process.env.PORT || 3000;
 
 app.get("/",(req,res)=>{
-    if(!req.query.lang){
-        res.render("bot.ejs",{lang:"eng"})
-    }else if(req.query.lang=="hin"){
+    
+       
+    if(req.query.lang=="hin"){
         res.render("bot1.ejs",{lang:"hin"})
     }else if(req.query.lang=="kan"){
         res.render("bot2.ejs",{lang:"kan"})
+    }else{
+        res.render("bot.ejs",{lang:"eng"})
     }
     
 })
