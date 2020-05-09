@@ -15,8 +15,16 @@ app.get("/",(req,res)=>{
         res.render("bot1.ejs",{lang:"hin"})
     }else if(req.query.lang=="kan"){
         res.render("bot2.ejs",{lang:"kan"})
+    }else if(req.query.lang=="tn"){
+        res.render("bot3.ejs")
+    }
+    else if(req.query.lang=="te"){
+        res.render("bot4.ejs")
+    }
+    else if(req.query.lang=="ml"){
+        res.render("bot5.ejs")
     }else{
-        res.render("bot.ejs",{lang:"eng"})
+        res.render("bot.ejs")
     }
     
 })

@@ -64,46 +64,80 @@ var createBubble = function(input) {
 var checkInput = function(input) {
   
   var reply ="";
-  
+  lang = document.querySelector('.active').innerHTML
+  if(lang=="English"){
+    lang1="en"
+   }
+  else if(lang=="Hindi(हिीन्द)"){
+    lang1="hi"
+  }
+  else if(lang=="Kannada(ಕನ್ನಡ)"){
+    lang1="kn"
+  }
   console.log(input)
   
   if(input==1||input==2||input==3||input==4||input==5){
    firstno=input;
    
-   lang = document.querySelector('.active').innerHTML
+   
    if(lang=="English"){
-    url ="http://salty-shelf-45512.herokuapp.com"
     console.log(chain)
     botResponse("go on with your question",chain)
     lang1="en"
    }
   else if(lang=="Hindi(हिीन्द)"){
-    url ="http://salty-shelf-45512.herokuapp.com"
     botResponse("अपना सवाल पूछें",chain)
     lang1="hi"
   }
   else if(lang=="Kannada(ಕನ್ನಡ)"){
-    url ="http://salty-shelf-45512.herokuapp.com"
     botResponse("ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಕೇಳಿ",chain)
     lang1="kn"
   }
+  else if(lang=="Tamil(தமிழ்)"){
+    botResponse("உங்கள் கேள்வியுடன் செல்லுங்கள்",chain)
+    lang1="tn"
+  }
+  else if(lang=="Telugu(తెలుగు)"){
+    botResponse("మీ ప్రశ్నతో కొనసాగండి",chain)
+    lang1="te"
+  }
+  else if(lang=="Malyalam(മല്യാലം)"){
+    botResponse("നിങ്ങളുടെ ചോദ്യവുമായി തുടരുക",chain)
+    lang1="ml"
+  }
+  
   
   }else{
     if(firstno==""){
-      
-      if(lang1="en"){
+      console.log(lang1)
+      if(lang1=="en"){
         
         botResponse("choose one of the above options first",chain)
         
        }
-      else if(lang1="hi"){
+      else if(lang1=="hi"){
         
         botResponse("उपरोक्त विकल्पों में से कोई एक चुनें",chain)
         
       }
-      else if(lang1="kn"){
+      else if(lang1=="kn"){
         
         botResponse("ಮೇಲಿನ ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಮೊದಲು ಆರಿಸಿ",chain)
+        
+      }
+      else if(lang1=="te"){
+        
+        botResponse("మొదట పై ఎంపికలలో ఒకదాన్ని గొట్టం చేయండి",chain)
+        
+      }
+      else if(lang1=="tn"){
+        
+        botResponse("மேலே உள்ள விருப்பங்களில் ஒன்றை முதலில் குழாய்",chain)
+        
+      }
+      else if(lang1=="ml"){
+        
+        botResponse("ആദ്യം മുകളിലുള്ള ഓപ്ഷനുകളിലൊന്ന് ഹോസ് ചെയ്യുക",chain)
         
       }
 
@@ -134,6 +168,15 @@ function api(url,input,firstno){
           }
           else if(lang=="kn"){
             botResponse(" yes(ಹೌದು) ಅಥವಾ No(ಇಲ್)ಲ ಎಂದು ಉತ್ತರಿಸಿ ",chain)
+            }
+            else if(lang=="te"){
+              botResponse(" yes(అవును) లేదా no(కాదు) అని సమాధానం ఇవ్వండి",chain)
+            }
+            else if(lang=="tn"){
+                botResponse(" yes(ஆம்) அல்லது no(இல்லை) என்ற பதிலில் பதிலளிக்கவும் ",chain)
+            }
+            else if(lang=="ml"){
+                botResponse(" yes(അതെ) അല്ലെങ്കിൽ no(ഇല്ല) എന്ന് ഉത്തരം നൽകുക",chain)
             }
         
       }else{
