@@ -220,6 +220,10 @@ body {
   #chatform {
     width: 90%;
   }
+  .chatbot__overview{
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .chatbox-area {
