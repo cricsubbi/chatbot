@@ -216,13 +216,20 @@ body {
   font-size: 1em;
   font-family: Helvetica;
 }
+#que{
+  margin-left: 370px;margin-top: 8px;font-weight: 200;
+}
 @media only screen and (max-width:768px) {
   #chatform {
     width: 80%;
+    padding-top: 10px;
   }
   .chatbot__overview{
     height: 80%;
     width: 80%;
+  }
+  #que{
+    margin-left: 70px;margin-top: 5px;font-weight: 200;
   }
 }
 
