@@ -216,7 +216,7 @@ body {
   font-size: 1em;
   font-family: Helvetica;
 }
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
   #chatform {
     width: 90%;
   }
