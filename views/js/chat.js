@@ -177,16 +177,16 @@ function api(url,input,firstno){
           else if(lang1=="hi"){
             botResponse(" Yes(हां) या No(ना) में जवाब दें ",chain)
           }
-          else if(lang=="kn"){
+          else if(lang1=="kn"){
             botResponse(" yes(ಹೌದು) ಅಥವಾ No(ಇಲ್)ಲ ಎಂದು ಉತ್ತರಿಸಿ ",chain)
             }
-            else if(lang=="te"){
+            else if(lang1=="te"){
               botResponse(" yes(అవును) లేదా no(కాదు) అని సమాధానం ఇవ్వండి",chain)
             }
-            else if(lang=="tn"){
+            else if(lang1=="tn"){
                 botResponse(" yes(ஆம்) அல்லது no(இல்லை) என்ற பதிலில் பதிலளிக்கவும் ",chain)
             }
-            else if(lang=="ml"){
+            else if(lang1=="ml"){
                 botResponse(" yes(അതെ) അല്ലെങ്കിൽ no(ഇല്ല) എന്ന് ഉത്തരം നൽകുക",chain)
             }
         
