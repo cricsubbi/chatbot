@@ -221,12 +221,12 @@ body {
 }
 @media only screen and (max-width:768px) {
   #chatform {
-    width: 80%;
+    width: 88%;
     padding-top: 10px;
   }
   .chatbot__overview{
-    height: 80%;
-    width: 80%;
+    height: 88%;
+    width: 88%;
   }
   #que{
     margin-left: 70px;margin-top: 5px;font-weight: 200;
