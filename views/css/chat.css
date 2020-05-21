@@ -218,11 +218,11 @@ body {
 }
 @media only screen and (max-width:768px) {
   #chatform {
-    width: 90%;
+    width: 80%;
   }
   .chatbot__overview{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
   }
 }
 
